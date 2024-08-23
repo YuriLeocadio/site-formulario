@@ -1,0 +1,144 @@
+body {
+    background: #E5E5E5;
+}
+
+body::before{
+    content: "";
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+}
+
+.container {
+    width: 736px;
+    margin: auto;
+}
+
+header {
+    width: 320px;
+    margin-top: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: white;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #42D3FF;
+}
+
+form {
+    margin-top: 38px;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.fieldset-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset legend {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid #e6e6ec;
+    padding-bottom: 16px;
+}
+
+.divs-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.divs-input label,
+.div-checkbox label {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.divs-input label span {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #949299;
+}
+
+.divs-input input,
+.divs-input textarea,
+.divs-input select {
+    background: #f5f5fa;
+    border: 1px solid #d7d7dd;
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #6c6a71;
+}
+
+.divs-input textarea {
+    height: 160px;
+}
+
+.div-data {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.div-checkbox{
+    margin-top: 12px;
+    display: flex;
+    gap: 14px;
+}
+
+.div-checkbox label {
+   display: flex;
+   padding-top: 4px;
+}
+
+#input-checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    appearance: none;
+    border: 1px solid #42D3FF;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+    border-top: 1px solid #d8d6d6;
+}
+
+.button {
+    height: 50px;
+    background: rgb(0, 196, 0);
+    border-radius: 8px;
+    border: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: red;
+}

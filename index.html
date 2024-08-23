@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,99 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Formulário do evento</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Crie e compartilhe seu evento.</h1>
+            <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+        </header>
+        <form id="form">
+            <fieldset>
+                <div class="fieldset-container">
+                    <legend>Informações do Evento</legend>
+
+                    <div class="divs-input">
+                        <label for="input-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
+                        <input type="text" id="input-title" required minlength="8">
+                    </div>
+
+                    <div class="divs-input">
+                        <label for="input-url">Link do evento <span>(comece com https://)</span></label>
+                        <input type="url" id="input-url">
+                    </div>
+
+                    <div class="divs-input">
+                        <label for="input-number">Whatsapp para contato <span>(somente números)</span></label>
+                        <input type="number" id="input-number">
+                    </div>
+
+                    <div class="divs-input">
+                        <label for="textarea-event">Informações extras</label>
+                        <textarea id="textarea-event"></textarea>
+                    </div>
+
+                    <div class="divs-input">
+                        <label for="select-category">Categoria</label>
+                        <select id="select-category">
+                            <option value="live">Ao vivo</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="mentory">Mentoria</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-container">
+                    <legend>Privacidade</legend>
+
+                    <div class="divs-input">
+                        <label for="input-email">E-mail do administrador
+                            <span>(digite um email válido)</span></label>
+                        <input type="email" id="input-email">
+                    </div>
+
+                    <div class="divs-input">
+                        <label for="input-password">Senha de acesso para os participantes
+                            <span>(mínimo 8 caracteres)</span></label>
+                        <input type="password" id="input-password" required minlength="8">
+                    </div>
+
+                    <div class="div-checkbox">
+                        <input type="checkbox" id="input-checkbox" />
+                        <label for="input-checkbox">Evento privado</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-container">
+                    <legend>Dia e hora</legend>
+
+                    <div class="div-data">
+                        <div class="divs-input">
+                            <label for="input-date">Data</label>
+                            <input type="date" id="input-date">
+                        </div>
+
+                        <div class="divs-input">
+                            <label for="input-time-das">Das</label>
+                            <input type="time" id="input-time-das">
+                        </div>
+
+                        <div class="divs-input">
+                            <label for="input-time-ate">Até</label>
+                            <input type="time" id="input-time-ate">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <footer>
+                <button class="button">Salvar evento</button>
+            </footer>
+        </form>
+    </div>
 </body>
+
 </html>
