@@ -105,20 +105,13 @@ fieldset legend {
 .div-checkbox{
     margin-top: 12px;
     display: flex;
+    align-items: center;
     gap: 14px;
 }
 
 .div-checkbox label {
    display: flex;
-   padding-top: 4px;
-}
-
-#input-checkbox {
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
-    appearance: none;
-    border: 1px solid #42D3FF;
+   padding-top: 8px;
 }
 
 footer {
